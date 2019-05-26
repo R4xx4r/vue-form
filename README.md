@@ -1,5 +1,16 @@
 # vue-form
 
+> Simple, lightweight form configurator/builder for Vue.js
+
+## Features & characteristics:
+*  configuration per json
+*  form validation
+*  default stylings
+*  custom finisher
+*  easy to use
+*  and many more
+
+
 ## Project setup
 ```
 npm install
@@ -24,6 +35,19 @@ npm run test
 ```
 npm run lint
 ```
+
+
+## Installation
+tbd.
+
+
+## Basic usage
+tbd.
+
+
+## License
+[MIT](http://opensource.org/licenses/MIT)
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
