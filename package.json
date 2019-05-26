@@ -1,6 +1,21 @@
 {
   "name": "vue-form",
+  "description": "Simple, lightweight form configurator/builder for Vue.js",
   "version": "0.1.0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/R4xx4r/vue-form/issues"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "form",
+    "javascript",
+    "form-builder",
+    "validation"
+  ],
+  "homepage": "https://github.com/R4xx4r/vue-form#readme",
+  "author": "Daniel Murth <daniel.murth@chello.at>",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
