@@ -12,7 +12,7 @@
         type: Object,
         required: true
       },
-      configuration: {
+      config: {
         type: Object,
         required: true
       }
