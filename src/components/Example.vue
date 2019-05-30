@@ -4,8 +4,35 @@
 
     <FormRow v-for="(row, index) in formData.rows" :key="index">
 
-      <template v-for="obj in row">
-        
+      <template v-for="(obj, index) in row">
+
+        <RadioButtons
+          v-if="obj.type == 'radio'"
+          :key="index"
+          :width="getWidth(obj.width, row.length)"
+          :label="obj.label"
+          :options="obj.options"
+          :color="obj.color" />
+
+        <InputText
+          v-if="obj.type == 'text'"
+          :key="index"
+          :width="getWidth(obj.width, row.length)" />
+
+        <Group
+          v-if="obj.type == 'group'"
+          :key="index"
+          :width="getWidth(obj.width, row.length)" />
+
+        <TextArea
+          v-if="obj.type == 'textarea'"
+          :key="index"
+          :width="getWidth(obj.width, row.length)" />
+
+        <Checkbox
+          v-if="obj.type == 'checkbox'"
+          :key="index"
+          :width="getWidth(obj.width, row.length)" />
 
       </template>
 
@@ -17,11 +44,20 @@
 
 <script>
   import FormRow from '@/components/partials/FormRow.vue';
+  import RadioButtons from '@/components/partials/RadioButtons.vue';
+  import InputText from '@/components/partials/InputText.vue';
+  import Group from '@/components/partials/Group.vue';
+  import TextArea from '@/components/partials/TextArea.vue';
+  import Checkbox from '@/components/partials/Checkbox.vue';
 
   export default {
     name: 'Form',
     components: {
-      FormRow
+      FormRow,
+      RadioButtons,
+      InputText,
+      Group,
+      TextArea,Checkbox
     },
     props: {
       formData: {
@@ -31,6 +67,15 @@
       config: {
         type: Object,
         required: true
+      }
+    },
+    methods: {
+      getWidth(configuredWidth, rowItems) {
+        if (configuredWidth) {
+          return configuredWidth;
+        }
+        // calculate width of given objects in row
+        return 100 / rowItems + '%';
       }
     }
   }

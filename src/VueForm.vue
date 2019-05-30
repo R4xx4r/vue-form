@@ -29,6 +29,7 @@
                   "female",
                   "male"
                 ],
+                width: '75%',
                 color: "#0000ff"
               }
             ],
