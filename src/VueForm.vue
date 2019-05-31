@@ -18,83 +18,83 @@
     data() {
       return {
         form: {
-          id: "example-form",
+          id: 'example-form',
           rows: [
             [
               {
-                type: "radio",
-                label: "Gender",
-                name: "gender",
+                type: 'radio',
+                label: 'Gender',
+                name: 'gender',
                 options: [
-                  "female",
-                  "male"
+                  'female',
+                  'male'
                 ],
                 width: '75%',
-                color: "#0000ff"
+                color: '#0000ff'
               }
             ],
             [
               {
-                type: "text",
-                label: "Firstname",
-                placeholder: "Firstname",
-                name: "firstname",
+                type: 'text',
+                label: 'Firstname',
+                placeholder: 'Firstname',
+                name: 'firstname',
                 required: true,
-                errorMsg: "Please insert firstname!"
+                errorMsg: 'Please insert firstname!'
               },
               {
-                type: "text",
-                label: "Lastname",
-                placeholder: "Lastname",
-                name: "lastname",
+                type: 'text',
+                label: 'Lastname',
+                placeholder: 'Lastname',
+                name: 'lastname'
               }
             ],
             [
               {
-                type: "text",
-                label: "Street",
-                placeholder: "Street",
-                name: "street",
+                type: 'text',
+                label: 'Street',
+                placeholder: 'Street',
+                name: 'street'
               },
               {
-                type: "group",
+                type: 'group',
                 elements: [
                   {
-                    type: "text",
-                    label: "Streetnumber",
-                    placeholder: "Nr.",
-                    name: "streetnumber",
+                    type: 'text',
+                    label: 'Streetnumber',
+                    placeholder: 'Nr.',
+                    name: 'streetnumber',
                   },
                   {
-                    type: "text",
-                    label: "Doornumber",
-                    placeholder: "door",
-                    name: "doornumber",
+                    type: 'text',
+                    label: 'Doornumber',
+                    placeholder: 'door',
+                    name: 'doornumber',
                   }
                 ]
               }
             ],
             [
               {
-                type: "textarea",
-                label: "Message",
-                placeholder: "Message",
+                type: 'textarea',
+                label: 'Message',
+                placeholder: 'Message',
                 rows: 5,
                 columns: 50,
-                name: "message",
+                name: 'message',
                 required: true,
-                errorMsg: "Please insert a message!"
+                errorMsg: 'Please insert a message!'
               }
             ],
             [
               {
-                type: "checkbox",
-                label: "DSGVO",
-                name: "dsgvo",
-                text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-                color: "#0000ff",
+                type: 'checkbox',
+                label: 'DSGVO',
+                name: 'dsgvo',
+                text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+                color: '#0000ff',
                 required: true,
-                errorMsg: "Please acceppt out terms."
+                errorMsg: 'Please acceppt out terms.'
               }
             ]
           ]

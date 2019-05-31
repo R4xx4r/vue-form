@@ -87,55 +87,59 @@ This isn't a real input type, but if you want to group some inputs you can use t
 **TEXT** <br>
 ``` bash
 {
-  type: "text",
-  label: "",
-  placeholder: "",
-  name: "",
+  type: 'text',
+  label: '',
+  placeholder: '',
+  name: '',
   required: false,
-  errorMsg: ""
+  errorMsg: '',
+  width: ''
 }
 ```
 
 **TEXTAREA** <br>
 ``` bash
 {
-  type: "textarea",
-  label: "",
-  placeholder: "",
+  type: 'textarea',
+  label: '',
+  placeholder: '',
   rows: 5,
   columns: 50,
-  name: "",
+  name: '',
   required: false,
-  errorMsg: ""
+  errorMsg: '',
+  width: ''
 }
 ```
 
 **RADIO BUTTONS** <br>
 ``` bash
 {
-  type: "radio",
-  label: "",
-  name: "",
+  type: 'radio',
+  label: '',
+  name: '',
   options: [
-    "option 1",
-    "option 2"
+    'option 1',
+    'option 2'
   ],
-  color: "",
+  color: '',
   required: false,
-  errorMsg: ""
+  errorMsg: '',
+  width: ''
 }
 ```
 
 **CHECKBOX** <br>
 ``` bash
 {
-  type: "checkbox",
-  label: "",
-  name: "",
-  text: "Text for checkbox",
-  color: "",
+  type: 'checkbox',
+  label: '',
+  name: '',
+  text: 'Text for checkbox',
+  color: '',
   required: false,
-  errorMsg: ""
+  errorMsg: '',
+  width: ''
 }
 ```
 
