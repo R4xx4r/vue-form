@@ -143,6 +143,18 @@ This isn't a real input type, but if you want to group some inputs you can use t
 }
 ```
 
+**SUBMIT BUTTON** <br>
+``` bash
+{
+  type: 'submit',
+  text: 'Send me',
+  backgroundColor: '',
+  color: '',
+  align:'',
+  width: ''
+}
+```
+
 ## The CONFIG configuration block
 **config - root element** (required)
 ``` bash

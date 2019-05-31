@@ -96,6 +96,15 @@
                 required: true,
                 errorMsg: 'Please acceppt out terms.'
               }
+            ],
+            [
+              {
+                type: 'submit',
+                text: 'Send Button',
+                backgroundColor: '#FF0000',
+                color: '#FFF',
+                width: '25%'
+              }
             ]
           ]
         },

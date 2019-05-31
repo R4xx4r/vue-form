@@ -9,14 +9,19 @@
         <RadioButtons
           v-if="obj.type == 'radio'"
           :key="index"
-          :width="getWidth(obj.width, row.length)"
           :label="obj.label"
           :options="obj.options"
+          :width="getWidth(obj.width, row.length)"
           :color="obj.color" />
 
         <InputText
           v-if="obj.type == 'text'"
           :key="index"
+          :label="obj.label"
+          :placeholder="obj.placeholder"
+          :name="obj.name"
+          :required="obj.required"
+          :errorMsg="obj.errorMsg"
           :width="getWidth(obj.width, row.length)" />
 
         <Group
@@ -34,6 +39,14 @@
           :key="index"
           :width="getWidth(obj.width, row.length)" />
 
+        <Submit
+        v-if="obj.type == 'submit'"
+        :key="index"
+        :text="obj.text"
+        :backgroundColor="obj.backgroundColor"
+        :color="obj.color"
+        :width="getWidth(obj.width, row.length)" />
+
       </template>
 
     </FormRow>
@@ -49,6 +62,7 @@
   import Group from '@/components/partials/Group.vue';
   import TextArea from '@/components/partials/TextArea.vue';
   import Checkbox from '@/components/partials/Checkbox.vue';
+  import Submit from '@/components/partials/Submit.vue';
 
   export default {
     name: 'Form',
@@ -57,7 +71,9 @@
       RadioButtons,
       InputText,
       Group,
-      TextArea,Checkbox
+      TextArea,
+      Checkbox,
+      Submit
     },
     props: {
       formData: {
