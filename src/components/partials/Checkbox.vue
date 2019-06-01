@@ -1,6 +1,10 @@
 <template>
 
-  <div :style="{'width': width}">CHECKBOX</div>
+  <div class="vue-form__input-wrapper" :style="{'width': width}">
+
+    
+
+  </div>
 
 </template>
 
