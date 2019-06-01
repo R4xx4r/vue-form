@@ -31,8 +31,14 @@
 </script>
 
 <style>
+
   .vue-form__button--submit {
     border: 0;
     padding: 10px 15px;
   }
+
+  .vue-form__button--submit:hover {
+    cursor: pointer;
+  }
+  
 </style>
