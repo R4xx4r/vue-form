@@ -102,7 +102,6 @@
                 text: 'Send Button',
                 backgroundColor: '#FF0000',
                 color: '#FFF',
-                align: 'right',
                 width: '25%'
               }
             ]

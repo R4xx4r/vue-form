@@ -18,10 +18,6 @@
         type: String,
         default: ''
       },
-      align: {
-        type: String,
-        default: ''
-      },
       width: {
         type: String,
         default: ''
