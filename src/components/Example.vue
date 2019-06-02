@@ -10,9 +10,12 @@
           v-if="obj.type == 'radio'"
           :key="index"
           :label="obj.label"
+          :name="obj.name"
           :options="obj.options"
-          :width="getWidth(obj.width, row.length)"
-          :color="obj.color" />
+          :color="obj.color"
+          :required="obj.required"
+          :errorMsg="obj.errorMsg"
+          :width="getWidth(obj.width, row.length)" />
 
         <InputText
           v-if="obj.type == 'text'"
