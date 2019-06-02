@@ -32,6 +32,13 @@
         <TextArea
           v-if="obj.type == 'textarea'"
           :key="index"
+          :label="obj.label"
+          :placeholder="obj.placeholder"
+          :rows="obj.rows"
+          :columns="obj.columns"
+          :name="obj.name"
+          :required="obj.required"
+          :errorMsg="obj.errorMsg"
           :width="getWidth(obj.width, row.length)" />
 
         <Checkbox

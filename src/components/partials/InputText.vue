@@ -3,7 +3,7 @@
   <div class="vue-form__input-wrapper" :style="{'width': width}">
 
     <label class="vue-form__label" :for="name" v-text="getLabel" v-if="label"></label>
-    <input class="vue_form__input vue_form__input--text" type="text" :name="name" :placeholder="getPlaceholder" />
+    <input class="vue_form__input vue_form__input--text" :id="name" type="text" :name="name" :placeholder="getPlaceholder" />
 
     <span class="vue-form__error" v-text="errorMsg" v-if="showError"></span>
 
@@ -64,7 +64,7 @@
   }
 </script>
 
-<style scoped>
+<style>
 
   .vue-form__input-wrapper {
     display: flex;
@@ -80,7 +80,8 @@
 
   .vue-form__label {
     font-weight: bold;
-    padding-left: 5px
+    padding-left: 5px;
+    margin-bottom: 5px;
   }
 
   .vue_form__input--text {

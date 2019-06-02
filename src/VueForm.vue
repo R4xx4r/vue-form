@@ -79,8 +79,7 @@
                 type: 'textarea',
                 label: 'Message',
                 placeholder: 'Message',
-                rows: 5,
-                columns: 50,
+                rows: 7,
                 name: 'message',
                 required: true,
                 errorMsg: 'Please insert a message!'
@@ -103,6 +102,7 @@
                 text: 'Send Button',
                 backgroundColor: '#FF0000',
                 color: '#FFF',
+                align: 'right',
                 width: '25%'
               }
             ]

@@ -40,5 +40,5 @@
   .vue-form__button--submit:hover {
     cursor: pointer;
   }
-  
+
 </style>

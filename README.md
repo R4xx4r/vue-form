@@ -104,7 +104,6 @@ This isn't a real input type, but if you want to group some inputs you can use t
   label: '',
   placeholder: '',
   rows: 5,
-  columns: 50,
   name: '',
   required: false,
   errorMsg: '',
