@@ -132,7 +132,6 @@ This isn't a real input type, but if you want to group some inputs you can use t
 ``` bash
 {
   type: 'checkbox',
-  label: '',
   name: '',
   text: 'Text for checkbox',
   color: '',

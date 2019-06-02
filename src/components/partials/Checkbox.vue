@@ -11,8 +11,33 @@
 <script>
   export default {
     name: 'Checkbox',
+    data() {
+      return {
+        showError: false
+      }
+    },
     props: {
       width: {
+        type: String,
+        default: ''
+      },
+      name: {
+        type: String,
+        required: true
+      },
+      text: {
+        type: String,
+        required: true
+      },
+      color: {
+        type: String,
+        default: ''
+      },
+      required: {
+        type: Boolean,
+        default: false
+      },
+      errorMsg: {
         type: String,
         default: ''
       }

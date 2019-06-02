@@ -47,15 +47,20 @@
         <Checkbox
           v-if="obj.type == 'checkbox'"
           :key="index"
+          :name="obj.name"
+          :text="obj.text"
+          :color="obj.color"
+          :required="obj.required"
+          :errorMsg="obj.errorMsg"
           :width="getWidth(obj.width, row.length)" />
 
         <Submit
-        v-if="obj.type == 'submit'"
-        :key="index"
-        :text="obj.text"
-        :backgroundColor="obj.backgroundColor"
-        :color="obj.color"
-        :width="getWidth(obj.width, row.length)" />
+          v-if="obj.type == 'submit'"
+          :key="index"
+          :text="obj.text"
+          :backgroundColor="obj.backgroundColor"
+          :color="obj.color"
+          :width="getWidth(obj.width, row.length)" />
 
       </template>
 
